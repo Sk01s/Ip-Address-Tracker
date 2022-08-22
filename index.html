@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | IP Address Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="title">
+      <h1>IP Address Tracker</h1>
+      <div class="search">
+        <input
+          placeholder=" for any IP address or domain IP Address Location"
+          data-input
+        />
+        <button data-btn>&#8250</button>
+      </div>
+  </div>
+
+    <main class="location">
+      <div>
+        <h4 class="location-title">IP Address</h4>
+        <strong class="locaiton-details" data-ip></strong>
+      </div>
+      <div>
+        <h4 class="location-title">Location</h4>
+        <strong class="locaiton-details" data-location></strong>
+      </div>
+      <div>
+        <h4 class="location-title">Timezone</h4>
+        <strong class="locaiton-details" data-timezone></strong>
+      </div>
+      <div>
+        <h4 class="location-title">ISP</h4>
+        <strong class="locaiton-details" data-ips></strong>
+      </div>
+    </main>
+
+    <div id="map"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
