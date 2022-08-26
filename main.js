@@ -23,9 +23,9 @@ const getIp = async (location = "") => {
     /^(?:(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])(\.(?!$)|$)){4}$/;
 
   const respond = await fetch(
-    `https://geo.ipify.org/api/v2/country?apiKey=${
-      import.meta.env.VITE_API_KEY
-    }&${ipRegex.test(location) ? " ipAddress=" : "domain="}${location}`
+    `https://geo.ipify.org/api/v2/country?apiKey=at_iixwNe0Fi0OMwlAguaaK4LkMAG5Se&${
+      ipRegex.test(location) ? " ipAddress=" : "domain="
+    }${location}`
   );
   const address = await respond.json();
   return address;
