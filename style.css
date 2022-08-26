@@ -11,14 +11,14 @@
   -webkit-text-size-adjust: 100%;
 }
 #map {
+  max-width: 100vw;
   height: 65vh;
+  z-index: -1;
 }
-#map li {
-  display: none;
+.leaflet-bottom.leaflet-right {
+  display: none !important;
 }
-#map button {
-  display: none;
-}
+
 a {
   font-weight: 500;
   color: #646cff;
